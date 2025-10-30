@@ -22,52 +22,55 @@ export default function BlogDetails() {
               <Image
                 src="/assets/icon2.svg"
                 alt="Yacht Hub Dubai"
-                width={150}
-                height={150}
-                className="object-contain"
+width={186} height={48}                 className="object-contain"
               />
             </div>
-            <span>|</span>
-
+<span
+  style={{
+    display: "inline-block",
+    width: "2px",
+    height: "40px",
+    backgroundColor: "black",
+  }}
+></span>
             {/* Nav Links */}
             <div className="hidden md:flex items-center space-x-8 text-base">
               <Link
                 href="#destinations"
-                className="hover:text-gray-200 transition"
-              >
+className="font-[Absans] fw-400 px-2 py-1 hover:bg-black hover:text-[#ffffff] transition duration-200"              >
                 Destinations
               </Link>
-              <Link href="#types" className="hover:text-gray-200 transition">
+              <Link href="#types" className="font-[Absans] fw-400 px-2 py-1 hover:bg-black hover:text-[#ffffff] transition duration-200">
                 Types
               </Link>
-              <Link href="#about" className="hover:text-gray-200 transition">
+              <Link href="#about" className="font-[Absans] fw-400 px-2 py-1 hover:bg-black hover:text-[#ffffff] transition duration-200">
                 About
               </Link>
-              <Link href="#contact" className="hover:text-gray-200 transition">
+              <Link href="#contact" className="font-[Absans] fw-400 px-2 py-1 hover:bg-black hover:text-[#eff3f4] transition duration-200">
                 Contact
               </Link>
-              <Link href="/blog" className="hover:text-gray-200 transition">
+              <Link href="/blog" className="font-[Absans] fw-400 px-2 py-1 hover:bg-black hover:text-[#ffffff] transition duration-200">
                 {" "}
                 Blog
               </Link>
-              <Link href="#services" className="hover:text-gray-200 transition">
+              <Link href="#services" className="font-[Absans] fw-400 px-2 py-1 hover:bg-black hover:text-[#ffffff] transition duration-200">
                 Services
               </Link>
             </div>
           </div>
 
           {/* Right section: Buttons */}
-          <div className="flex items-center space-x-4">
-            {/* WhatsApp Button */}
-            <Button className="bg-[#02CE1A] hover:bg-[#1DA851] rounded-none text-white flex items-center space-x-2 px-4 py-2">
-              <FaWhatsapp size={20} />
-              <span>Book on WhatsApp</span>
-            </Button>
+      <div className="flex items-center space-x-4">
+        {/* WhatsApp Button */}
+        <Button className="bg-[#02CE1A] hover:bg-[#03a41b]  w-[200px] h-[45px] rounded-none text-white cursor-pointer flex items-center">
+
+         <img src="/assets/whatsapp.svg" className="w-5 h-5" alt="" /> <span className="text-[15px]">Book on WhatsApp</span>
+        </Button>
 
             {/* Get Started Button */}
-            <Button className=" bg-white text-black border border-black rounded-none font-medium px-5 py-2 transition">
-              Get started
-            </Button>
+        <Button className=" bg-white text-black hover:text-white hover:bg-black w-[120px] h-[45px] cursor-pointer border border-black  rounded-none font-medium transition">
+          Get started
+        </Button>
           </div>
         </nav>
 
